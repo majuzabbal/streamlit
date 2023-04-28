@@ -43,11 +43,11 @@ if st.button('Prever'):
         'YearsWithCurrManager': years_with_curr_manager
     }, index=[0])
 
-# Fazer a previsão utilizando o modelo carregado
-prediction = model.predict(user_data)[0]
+    # Fazer a previsão utilizando o modelo carregado
+    prediction = model.predict(user_data)[0]
 
-# Exibir o resultado da previsão
-if prediction == 0:
-    st.write('O funcionário provavelmente não irá sair da empresa.')
-else:
-    st.write('O funcionário provavelmente irá sair da empresa.')
+    # Exibir o resultado da previsão
+    if prediction == 0:
+        st.write('O funcionário provavelmente não irá sair da empresa.')
+    else:
+        st.write('O funcionário provavelmente irá sair da empresa.')
