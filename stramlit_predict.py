@@ -36,10 +36,10 @@ if st.button('Prever'):
         'MonthlyRate': monthly_rate,
         'TotalWorkingYears': total_working_years,
         'EmployeeNumber': employee_number,
-        'OverTime_No': overtime_no,
+        'OverTime_No': 0 if overtime_no == 'Não' else 1,
         'DistanceFromHome': distance_from_home,
         'HourlyRate': hourly_rate,
-        'OverTime_Yes': overtime_yes,
+        'OverTime_Yes': 1 if overtime_no == 'Sim' else 0,
         'NumCompaniesWorked': num_companies_worked,
         'YearsWithCurrManager': years_with_curr_manager
     }, index=[0])
